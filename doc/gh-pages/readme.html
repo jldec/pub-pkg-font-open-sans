@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<header>
+<div data-render-layout="main-layout"><header>
 <div id="doctitle"><h1 id="-pub-pkg-font-open-sans-"><a href="./">pub-pkg-font-open-sans</a></h1>
 </div>
 <div id="topmenu"><ul>
@@ -44,7 +44,7 @@
 
 <div id="main" onclick="">
 <div id="content" class="markdown-body">
-<div data-render-page="default"><h2 id="pub-pkg-font-open-sans">pub-pkg-font-open-sans</h2>
+<div data-render-page="default"><div data-render-html="/readme"><h2 id="pub-pkg-font-open-sans">pub-pkg-font-open-sans</h2>
 <ul>
 <li>Enables <a href="#">Open Sans</a> for any <a href="https://github.com/jldec/pub-server">pub-server</a> design.</li>
 <li>Serves fonts to browsers in woff, woff2, and eot formats.</li>
@@ -75,16 +75,20 @@
 <p>Font files are npm installed via <a href="https://www.npmjs.com/package/open-sans-fontface">open-sans-fontface</a></p>
 <h3 id="font-attribution">Font Attribution</h3>
 <p>Steve Matteson - Apache License 2.0</p>
-
+</div>
 </div>
 </div>
 <div id="credit"><p><span class="fa">&#xf004</span> powered by <a href="http://jldec.github.io/pub-doc/">pub-server</a> and <a href="https://github.com/jldec/pub-theme-doc">pub-theme-doc</a></p>
 </div>
 </div>
+</div>
+
+<script>window.pubRef = {"href":"/readme","relPath":"."};</script>
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./js/highlight-0.2.3.min.js"></script>
 <script src="./js/pub-pkg-highlight-0.2.3.js"></script>
 <script src="./js/show-font.js"></script>
+<script src="./server/pub-ux.js"></script>
 <!-- Copyright (c) 2015 Jürgen Leschner - github.com/jldec - MIT License -->
 </body>
 </html>
