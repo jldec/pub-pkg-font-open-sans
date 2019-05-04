@@ -1,14 +1,18 @@
 {
   "name": "pub-pkg-font-open-sans",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "pub-server package for publishing with the Open Sans font",
   "main": "pub-config.js",
   "dependencies": {
     "open-sans-fontface": "^1.4.0"
   },
   "devDependencies": {
-    "pub-pkg-show-font": "^1.0.0"
+    "pub-pkg-show-font": "^1.1.0"
   },
+  "files": [
+    "pub-config.js",
+    "open-sans.css"
+  ],
   "keywords": [
     "pub-server",
     "publish",
@@ -21,10 +25,6 @@
     "url": "git://github.com/jldec/pub-pkg-font-open-sans.git"
   },
   "scripts": {
-    "readme":  "pub",
-    "docedit": "pub doc",
-    "docout":  "pub -O doc",
-    "docview": "pub -S doc/gh-pages doc"
   },
   "author": "jurgen leschner",
   "license": "MIT AND Apache-2.0"
