@@ -2,7 +2,7 @@
 /**
  * fragment.js
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 module.exports = Fragment;
@@ -27,7 +27,7 @@ Fragment.prototype.serialize = function serialize() {
  * - renders finished pages
  * - handles updates from editor
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var debug = require('debug')('pub:generator');
@@ -280,7 +280,7 @@ function Generator(opts) {
 /**
  * pub-generator getsourcefiles.js
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 module.exports = function getSourceFiles(source, cb) {
@@ -312,7 +312,7 @@ module.exports = function getSourceFiles(source, cb) {
  * pub-generator mixin
  * returns aggregated fragments across sources after applying updates
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var u = require('pub-util');
@@ -414,7 +414,7 @@ module.exports = function getsources(generator) {
  * template rendering helpers
  * registers each helper with generator.handlebars
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  *
 **/
 /*eslint no-unused-vars: ["error", { "argsIgnorePattern": "frame" }]*/
@@ -925,7 +925,7 @@ module.exports = function helpers(generator) {
  *   _fragments: array of references to page fragments (for auto-rendering fragments in order)
  *   #*:         #name references to each page fragment (for rendering fragment by name)
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var u = require('pub-util');
@@ -1010,7 +1010,7 @@ module.exports = function makepages(fragments, opts) {
 /*
  * asyncbuilder
  * simple semi-asynchronous list builder
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 */
 
 module.exports = asyncbuilder;
@@ -1082,7 +1082,7 @@ function asyncbuilder(mainCallBack) {
  * date-plus.js
  * parses and returns native date extended with dateformat
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var dateformat = require('./dateformat.js');
@@ -23730,7 +23730,7 @@ if (typeof require !== 'undefined' && require.extensions) {
  * opts.noConsole - no auto-log to console
  * opts.noErrors  - no 'error' events which throw if unhandled, just 'log' events
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  *
 **/
 
@@ -23794,7 +23794,7 @@ function loggerEmitter(opts) {
  * usage: formsRenderer = markedForms(renderer, marked)
  * NOTE: 2nd paramater is optional - required to monkey-patch to allow links with spaces
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  *
 **/
 
@@ -25876,7 +25876,7 @@ function plural(ms, msAbs, n, name) {
  * paths and module names are resolved relative to config directory or cwd
  * modules and dirs inside pkgs are resolved relative to pkg directories
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  */
 
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "debug" }]*/
@@ -26331,7 +26331,7 @@ function resolveOpts(opts, builtins) {
  * uses request in node, jquery in browser
  * https://github.com/mikeal/request
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 /* global $ */
@@ -26415,7 +26415,7 @@ module.exports = function sourceHttp(sourceOpts) {
  * pub-util.js
  * Utility toolbelt based on lodash for pub-server and other pub-* packages
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var util = require('util');
@@ -28471,7 +28471,7 @@ IndexedSourceMapConsumer.prototype.sourceContentFor =
  * and an object is returned with the following properties:
  *
  *   - line: The line number in the generated source, or null.  The
- *     line number is 1-based. 
+ *     line number is 1-based.
  *   - column: The column number in the generated source, or null.
  *     The column number is 0-based.
  */
@@ -29909,7 +29909,7 @@ exports.SourceNode = require('./lib/source-node').SourceNode;
  * output.js
  * pub-generator mixin for file output
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var debug = require('debug')('pub:generator:output');
@@ -30059,7 +30059,7 @@ module.exports = function output(generator) {
  * - file.text is deleted
  * - file.source contains ref to source
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var u = require('pub-util');
@@ -30246,7 +30246,7 @@ function parseFilesPUB(source, opts) {
  * left, right and end-of-header delimiters can be customized with opts
  * no extra fragment is generated for a header section at the very top
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  */
 
 var Fragment = require('./fragment');
@@ -30342,7 +30342,7 @@ module.exports = function parseFragments(srctext, opts) {
  *    https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes
  *    interop with https://api.jquery.com/data/#data-html5
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  */
 
 var u = require('pub-util');
@@ -30395,7 +30395,7 @@ module.exports = function parseHeaders(fragment, opts) {
  * ALSO: for fileNames only, strip ordering prefix from path/name
  *       and swallow names which match the string 'index' exactly (lowercase)
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var u = require('pub-util');
@@ -30480,7 +30480,7 @@ function noPrefix(s) {
  * pub-generator mixin
  * provides functions for rendering HTML using handlebars templates and marked
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  *
 **/
 
@@ -30842,7 +30842,7 @@ module.exports = function render(generator) {
  * reverse of parsefiles.js: serializes fragments back into file.text
  * TODO: streaming
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var u = require('pub-util');
@@ -30891,7 +30891,7 @@ function recreateFileText(files) {
  * update.js
  * pub-generator mixin for fragment updates
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var debug = require('debug')('pub:generator');
@@ -31249,7 +31249,7 @@ module.exports = function update(generator) {
  * served at /pub/_generator.js by serve-scripts.js
  * depends on jquery
  *
- * copyright 2015, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015, Jürgen Leschner - github.com/jldec - MIT license
 */
 
 var debug = require('debug')('pub:generator');
@@ -31299,7 +31299,7 @@ initOpts(function(err, opts) {
  * possibly by directing browser to gatekeeper for auth roundabout
  * TODO: implement a mechanism to force re-authentication (logout gatekeeper)
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 */
 
 
@@ -33967,18 +33967,18 @@ function mkdirP (p, opts, f, made) {
     else if (!opts || typeof opts !== 'object') {
         opts = { mode: opts };
     }
-    
+
     var mode = opts.mode;
     var xfs = opts.fs || fs;
-    
+
     if (mode === undefined) {
         mode = _0777 & (~process.umask());
     }
     if (!made) made = null;
-    
+
     var cb = f || function () {};
     p = path.resolve(p);
-    
+
     xfs.mkdir(p, mode, function (er) {
         if (!er) {
             made = made || p;
@@ -34011,10 +34011,10 @@ mkdirP.sync = function sync (p, opts, made) {
     if (!opts || typeof opts !== 'object') {
         opts = { mode: opts };
     }
-    
+
     var mode = opts.mode;
     var xfs = opts.fs || fs;
-    
+
     if (mode === undefined) {
         mode = _0777 & (~process.umask());
     }
@@ -34556,7 +34556,7 @@ process.umask = function() { return 0; };
  * files with binary-extensions are automatically excluded by listfiles()
  * used by pub-src-fs, pub-src-github, and pub-server/serve-static
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var fs = require('graceful-fs');
@@ -35090,7 +35090,7 @@ module.exports=[
  * opts.dirsFirst - default false (files first)
  * opts.indexFile - default '.../index.xxx' sorts before other files
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  */
 
 /*eslint indent: ["off"]*/
@@ -35124,9 +35124,9 @@ module.exports = function(opts) {
     name = name.replace(indexFileRe, '$1\u0000$2'); // force first and sort by extension
 
     var parts = name.split('/');
-    var last = parts.length - 1; 
+    var last = parts.length - 1;
 
-    name = u.map(parts, function(s, idx) { 
+    name = u.map(parts, function(s, idx) {
       return (idx === last ? filePrefix : dirPrefix) + s;
     }).join('\u0000'); // force delimiters to sort before anything
 
@@ -35328,7 +35328,7 @@ module.exports = function ghbase(opts) {
  * pub-src-github.js
  * patches fs-base with github-base to replace readdir, readfile, writefiles
  *
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
 **/
 
 var debug = require('debug')('pub:src-github');
@@ -38314,7 +38314,7 @@ UChar.udata={
          value: function(form) {
             var str = "" + this;
             form =  form === undefined ? "NFC" : form;
-            
+
             if (form === "NFC") {
                return unorm.nfc(str);
             } else if (form === "NFD") {

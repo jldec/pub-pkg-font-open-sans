@@ -7,5 +7,5 @@ var opts = module.exports = {
   outputs:     { path:'../docs', relPaths:1 },
   injectCss:   '/css/pkg-font-open-sans-doc.css',
 
-  copyright:   'Copyright (c) 2015-2019 Jürgen Leschner - github.com/jldec - MIT License'
+  copyright:   'Copyright (c) 2015-2020 Jürgen Leschner - github.com/jldec - MIT License'
 }

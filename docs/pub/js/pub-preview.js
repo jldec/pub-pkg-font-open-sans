@@ -408,7 +408,7 @@ pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
    * Module dependencies.
    */
 
-  
+
 
   /**
    * Short-cuts for global-object checks
@@ -1218,7 +1218,7 @@ return page_js;
  * jqueryview.js
  *
  * pub-generator plugin for jquery views
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  *
  * listens for 'nav', 'loaded', and 'updatedText' events
  * emits 'update-view' when content has been replaced
@@ -1345,7 +1345,7 @@ module.exports = function(generator, window) {
  * binds preview doc to generator via jqueryview
  *
  * NOTE: uses history push/pop-state, which doesn't work in older browers
- * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
  *
 */
 
